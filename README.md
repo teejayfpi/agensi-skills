@@ -60,18 +60,20 @@ Drop a package folder into your agent's skills directory and confirm it triggers
 ├── commit-and-changelog/          free listing 1
 ├── dev-environment-doctor/        free listing 2
 ├── repo-maintenance-pack/         paid listing (3 skills + shared reference)
-└── *.zip                          upload artifacts (gitignored, build with build_zips.py)
+└── *.zip                          upload artifacts, ready to download
 ```
 
 ## Rebuilding the ZIPs
 
-Edit a skill, then:
+The three `.zip` files in the repository root are the exact upload artifacts. If you
+edit a skill, regenerate them:
 
 ```bash
 python3 build_zips.py
 ```
 
-This regenerates all three ZIPs from the source folders. The ZIPs are gitignored on purpose: the source folders are the truth, the ZIPs are build output.
+The source folders are the truth; the ZIPs are build output that is committed for
+convenience so you can download and upload them without running anything.
 
 ## Marketplace rules the packages follow
 

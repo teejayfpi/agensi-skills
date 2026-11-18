@@ -1,6 +1,3 @@
-# Build artifacts (regenerate with the package script)
-*.zip
-
 # OS noise
 .DS_Store
 Thumbs.db
